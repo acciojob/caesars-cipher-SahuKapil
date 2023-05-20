@@ -26,10 +26,10 @@ function rot13(encodedStr)
 		{
 			if(lookup[ encodedStr[i] ] === undefined) 
 			{
-				outputString += encodedStr] ;
+				outputString += encodedStr[i] ;
 			}
 			else{
-				outputString += lookup[ encodedStr(i] ]
+				outputString += lookup[ encodedStr[i] ]
 			}
 		}
 	return outputString
