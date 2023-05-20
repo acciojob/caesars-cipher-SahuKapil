@@ -8,14 +8,31 @@ const lookup = {
   'Y': 'L', 'Z': 'M', '?': '?', ',': ','
 };
 
-function rot13(encodedStr) {
-  let decodedArr = [];
-  for (let i = 0; i < encodedStr.length; i++) {
-    const encodedChar = encodedStr[i];
-    const decodedChar = lookup[encodedChar];
-    decodedArr.push(decodedChar !== undefined ? decodedChar : encodedChar);
-  }
-  return decodedArr.join('');
+// function rot13(encodedStr) 
+// {
+//   let decodedArr = [];
+//   for (let i = 0; i < encodedStr.length; i++) 
+//   {
+//     const encodedChar = encodedStr[i];
+//     const decodedChar = lookup[encodedChar];
+//     decodedArr.push(decodedChar !== undefined ? decodedChar : encodedChar);
+//   }
+//   return decodedArr.join('');
+// }
+function rot13(encodedStr)
+{
+	let outputString = "";
+	for(let i = 0 ; i < encodedStr. length ; i++)
+		{
+			if(lookup[ encodedStr[i] ] === undefined) 
+			{
+				outputString += encodedStr] ;
+			}
+			else{
+				outputString += lookup[ encodedStr(i] ]
+			}
+		}
+	return outputString
 }
 
 console.log(rot13("SERR YBIR? NPPVBWBO"));
